@@ -1,0 +1,14 @@
+extends /blocks/layout-default/layout-default
+include ../blocks/helpers/mixins
+
+block head
+	- var pageTitle = 'Testing';
+
+block content
+	.wrapper
+		include ../blocks/header/header
+		form.form
+			include ../blocks/basic-info/basic-info
+			include ../blocks/skills/skills
+			include ../blocks/javascript-slider/javascript-slider
+			+form-text-input('date', 'Дата заполнения', '22.04.2016')(class="basic-item__input-text--date")

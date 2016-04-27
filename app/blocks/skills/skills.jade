@@ -1,0 +1,29 @@
+h2.form-header Практические навыки
+.asterisk
+	.asterisk__text
+		| Отметьте только те технологии и типы задач, с которыми вы
+		| хорошо знакомы. Отсутствие опыта отнюдь не означает, что у ваc меньше
+		| шансов стать нашим сотрудником. Это означает, что вы будете получать
+		| те задачи, с которыми гарантировано будете справляться.
+.skills
+	.skills__col
+		+checkbox('check-bem', 'Методология БЭМ')(checked)
+		+checkbox('check-jquery', 'jQuery')(checked)
+		+checkbox('check-grunt', 'Использую GULP')(checked)
+		+checkbox('check-haml', 'HAML')
+		+checkbox('check-sass', 'SASS')(checked)
+		+checkbox('check-less', 'LESS')
+		+checkbox('check-coffee', 'CoffeeScript')
+	.skills__col
+		+checkbox('check-jade', 'Jade')(checked)
+		+checkbox('check-stylus', 'Stylus')(checked)
+		+checkbox('check-angular', 'Знаю (изучаю) React')(checked)
+		+checkbox('check-android', 'Верстка под Andoid')(checked)
+		+checkbox('check-ios', 'Верстка под iOS')(checked)
+		+checkbox('check-wp', 'Верстка под Windows Phone')
+	.skills__col
+		+checkbox('check-mail', 'Верстка рассылок')
+		+checkbox('check-adaptive', 'Адаптивная верстка')(checked)
+		+checkbox('check-dropbox', 'Использую Dropbox')(checked)
+		+checkbox('check-gmail', 'Использую Gmail')(checked)
+		+checkbox('check-github', 'Использую GitHub')(checked)

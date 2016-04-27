@@ -1,0 +1,10 @@
+.basic-info
+	+form-text-input('full-name', 'Полное ФИО', 'Останин Лев Сергеевич')
+	+form-text-input('birth-year', 'Год рождения', '1987')
+	+form-text-input('location', 'Место жительства', 'г. Москва, Россия')
+	+form-text-input('skype', 'Скайп', 'digitalnes')
+	+form-text-input('email', 'Почта', 'lev.ostanin@gmail.com')
+.graduate
+	span.basic-item__label.basic-item__label--htmlacademy Выпускник #[a(target="_blank" href="http://htmlacademy.ru") htmlacademy.ru]
+	+radio-button('htmlacademy-yes', 'htmlacademy', 'Да')
+	+radio-button('htmlacademy-no', 'htmlacademy', 'Нет')(checked)

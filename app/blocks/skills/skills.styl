@@ -1,0 +1,86 @@
+.asterisk
+	margin 10px 0 20px
+	overflow auto
+
+	&__text
+		position relative
+		padding-left 20px
+		display inline-block
+		font-size 14px
+		line-height 22px
+		color #3d3d3d
+
+		&:before
+			position absolute
+			top 5px
+			left 2px
+			display inline-block
+			width 11px
+			height 9px
+			content ''
+			background url(../../assets/images/asterisk.png)
+			background-repeat no-repeat
+
+.skills
+	margin-bottom 69px
+	display flex
+	flex-flow row wrap
+
+	&__col
+
+		+below(640px)
+			&:not(:last-child):after
+				margin 20px auto
+				display block
+				width 20%
+				height 1px
+				content ''
+				background rgba(#2f1b15, .4)
+
+		&:nth-child(1)
+			width 34%
+
+			+below(640px)
+				width 100%
+
+		&:nth-child(2)
+			width 36%
+
+			+below(640px)
+				width 100%
+
+		&:nth-child(3)
+			width 30%
+
+			+below(640px)
+				width 100%
+
+.checkbox
+	margin-bottom 10px
+
+
+	&__label
+		position relative
+		padding-left 28px
+		display inline-block
+		font-size 21px
+		font-weight 700
+		line-height 25px
+		cursor pointer
+		color #000
+
+		&:before
+			position absolute
+			top -7px
+			left 0
+			display inline-block
+			width 23px
+			height 35px
+			content ''
+			background url(../../assets/images/checkbox-unchecked.png) no-repeat
+
+	&__input-checkbox
+		display none
+
+		&:checked + .checkbox__label:before
+			background url(../../assets/images/checkbox-checked.png) no-repeat

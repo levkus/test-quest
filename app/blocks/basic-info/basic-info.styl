@@ -1,0 +1,84 @@
+.basic-info
+	margin-bottom 43px
+
+.basic-item
+	margin-bottom 14px
+	display flex
+	flex-flow row nowrap
+	align-items flex-end
+
+	+below(640px)
+		flex-flow column
+		align-items stretch
+
+	&:last-child
+		margin-bottom 0
+
+	&__label
+		margin-right 14px
+		font-size 22.43px
+		font-weight 700
+
+		+below(640px)
+			font-size 21px
+			font-weight 700
+
+		&--htmlacademy
+			margin-right 34px
+
+			+below(640px)
+				margin-right 20px
+
+	&__input-text
+		flex-grow 2
+		padding 6px 16px
+		font-family 'Courier New', serif
+		font-size 30px
+		line-height 36px
+		color #231f20
+		background url(../images/underline.png)
+		background-color transparent
+		background-repeat repeat-x
+		background-position bottom
+		border none
+
+		+below(640px)
+			background-size contain
+
+		+below(420px)
+			font-size 20px
+
+		&--date
+			padding 6px 10px
+			max-width 205px
+
+.graduate
+	margin-bottom 42px
+	display flex
+	align-items center
+
+.radio
+
+	&__label
+		margin-right 18px
+		font-size 22.43px
+		font-weight 700
+		line-height 25px
+		white-space nowrap
+		cursor pointer
+
+	&__label:before
+		position relative
+		top 6px
+		margin-right 6px
+		display inline-block
+		width 28px
+		height 28px
+		content ''
+		background url(../images/radio-unchecked.png)
+
+	&__input-radio
+		display none
+
+		&:checked + .radio__label:before
+			background url(../images/radio-checked.png)

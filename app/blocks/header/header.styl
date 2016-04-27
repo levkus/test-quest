@@ -1,0 +1,45 @@
+.header
+	display flex
+	flex-flow row wrap
+	justify-content space-between
+
+	&__logo-tagline
+		margin-top 4px
+		margin-left 4px
+		font-size 10px
+		color #2f1b15
+
+	&__topsecret
+		position relative
+		top -19px
+		left -6px
+		width 252px
+		height 106px
+		background-image url(../images/secret.png)
+		background-size cover
+
+		+below(640px)
+			top -10px
+			left 0
+			width 130px
+			height 55px
+
+		+below(340px)
+			display none
+
+	&__case
+		margin-top 19px
+		width 100%
+
+		+below(640px)
+			margin-top 30px
+
+		img
+			position relative
+			left -19px
+			margin 0 auto
+			display block
+
+			+below(640px)
+				left 0
+				width 120px
