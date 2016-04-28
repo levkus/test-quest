@@ -18,7 +18,7 @@
 			width 11px
 			height 9px
 			content ''
-			background url(../../assets/images/asterisk.png)
+			background url(../images/asterisk.png)
 			background-repeat no-repeat
 
 .skills
@@ -49,15 +49,22 @@
 			+below(640px)
 				width 100%
 
+			+between(641px, 890px)
+				width 41%
+
+
+
 		&:nth-child(3)
 			width 30%
 
 			+below(640px)
 				width 100%
 
+			+between(641px, 890px)
+				width 25%
+
 .checkbox
 	margin-bottom 10px
-
 
 	&__label
 		position relative
@@ -77,10 +84,34 @@
 			width 23px
 			height 35px
 			content ''
-			background url(../../assets/images/checkbox-unchecked.png) no-repeat
+			background url(../images/checkbox-unchecked.png) no-repeat
+
+		.strike
+			position relative
+
+			&:before
+				position absolute
+				top -25px
+				right 5px
+				font-family 'Shadows Into Light Two', cursive
+				font-weight 200
+				letter-spacing 2px
+				content attr(data-fix)
+				color #19487C
+
+			&:after
+				position absolute
+				top 3px
+				right -5px
+				display block
+				width 75px
+				height 25px
+				content ''
+				background-image url(../images/strike.png)
+				background-repeat no-repeat
 
 	&__input-checkbox
 		display none
 
 		&:checked + .checkbox__label:before
-			background url(../../assets/images/checkbox-checked.png) no-repeat
+			background url(../images/checkbox-checked.png) no-repeat

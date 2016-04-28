@@ -1,8 +1,8 @@
 extends /blocks/layout-default/layout-default
-include ../blocks/helpers/mixins
+include ../helpers/mixins
 
 block head
-	- var pageTitle = 'Testing';
+	- var pageTitle = 'CSSSR Test Quest';
 
 block content
 	.wrapper
@@ -11,4 +11,4 @@ block content
 			include ../blocks/basic-info/basic-info
 			include ../blocks/skills/skills
 			include ../blocks/javascript-slider/javascript-slider
-			+form-text-input('date', 'Дата заполнения', '22.04.2016')(class="basic-item__input-text--date")
+			+form-text-input('date', 'Дата заполнения', '28.04.2016')(class="basic-item__input-text--date")

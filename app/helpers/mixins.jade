@@ -11,4 +11,4 @@ mixin radio-button(id, name, label)
 mixin checkbox(id,label)
 	.checkbox
 		input.checkbox__input-checkbox(id=id name=id type="checkbox")&attributes(attributes)
-		label.checkbox__label(for=id)=label
+		label.checkbox__label(for=id)!=label
