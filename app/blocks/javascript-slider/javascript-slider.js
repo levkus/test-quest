@@ -10,7 +10,7 @@ export default function jsSlider($container, $pointer, $ghost, $selectors, $poin
 	// Вычисляем текущий процент и записываем его в selectedPercent
 	function getPercent() {
 		selectedPercent = Math.max(0, Math.min(($pointer.offset().left - offsetLeft + $pointer.width() / 2) / percent, 100)).toFixed(1);
-		console.log('JS Skill: ' + selectedPercent + '%');
+		console.log('JavaScript Skill: ' + selectedPercent + '%');
 		$pointerValue.html(selectedPercent + '%');
 		return selectedPercent;
 	}
